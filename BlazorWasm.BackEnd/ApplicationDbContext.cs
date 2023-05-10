@@ -13,7 +13,7 @@ namespace BlazorWasmServer.Server
 
         public DbSet<Categoria> Categorias { get; set; }
         public DbSet<Produto> Produtos { get; set; }
-        public DbSet<Pokemon> Pokemons { get; set; }    
+        public DbSet<Pokemon> Pokemon { get; set; }    
 
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         { 

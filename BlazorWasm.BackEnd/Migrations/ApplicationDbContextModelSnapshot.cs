@@ -37,18 +37,6 @@ namespace BlazorWasm.BackEnd.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("ATK")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<string>("Ataques")
-                        .HasColumnType("TEXT");
-
-                    b.Property<int>("DFS")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<int>("HP")
-                        .HasColumnType("INTEGER");
-
                     b.Property<string>("Nome")
                         .HasColumnType("TEXT");
 
@@ -57,7 +45,7 @@ namespace BlazorWasm.BackEnd.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Pokemons");
+                    b.ToTable("Pokemon");
                 });
 
             modelBuilder.Entity("BlazorWasm.Compartilhado.Entidades.Produto", b =>

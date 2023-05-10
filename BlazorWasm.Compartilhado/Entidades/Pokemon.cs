@@ -15,8 +15,8 @@ namespace BlazorWasm.Compartilhado.Entidades
         //public int HP { get; set; }
         //public int ATK { get; set; }
         //public int DFS { get; set; }
-        public int CategoriaId { get; set; }
-        public virtual Categoria Categoria { get; set; }
+        //public int CategoriaId { get; set; }
+        //public virtual Categoria Categoria { get; set; }
 
     }
 }

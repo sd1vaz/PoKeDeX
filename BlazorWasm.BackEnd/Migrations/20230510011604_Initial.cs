@@ -22,21 +22,17 @@ namespace BlazorWasm.BackEnd.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Pokemons",
+                name: "Pokemon",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
                     Nome = table.Column<string>(type: "TEXT", nullable: true),
-                    Tipo = table.Column<string>(type: "TEXT", nullable: true),
-                    Ataques = table.Column<string>(type: "TEXT", nullable: true),
-                    HP = table.Column<int>(type: "INTEGER", nullable: false),
-                    ATK = table.Column<int>(type: "INTEGER", nullable: false),
-                    DFS = table.Column<int>(type: "INTEGER", nullable: false)
+                    Tipo = table.Column<string>(type: "TEXT", nullable: true)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Pokemons", x => x.Id);
+                    table.PrimaryKey("PK_Pokemon", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -70,7 +66,7 @@ namespace BlazorWasm.BackEnd.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Pokemons");
+                name: "Pokemon");
 
             migrationBuilder.DropTable(
                 name: "Produtos");
